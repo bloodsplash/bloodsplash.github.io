@@ -18,7 +18,7 @@ img{
    max-width: 1170px;
    margin-left: auto;
    margin-right: auto;
-   padding: 1em;
+   padding: 0em;
    display: grid;
    grid-template-rows: 1fr;
    justify-items: center;
