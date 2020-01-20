@@ -9,11 +9,6 @@ body{
     padding: 1em;
 }
 
-img{
-    width: 25rem;
-
-}
-
 .container{
    max-width: 1170px;
    margin-left: auto;
