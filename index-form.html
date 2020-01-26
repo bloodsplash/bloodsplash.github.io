@@ -18,37 +18,40 @@
             <div class="company-info">
                 <h3>Zaynab Pruitt Personal Training</h3> 
                 <ul>
-                    <li>Duncan, SC</li>
-                    <li>(123) 345-6789</li>
-                    <li>info@getfitwithzay.com</li>
+                    <li>Duncan, Greenville, Spartanburg</li>
+                    <li>South Carolina</li>
+                    <li>zaynab@getfitwithzay.com</li>
                 </ul>             
             </div>
             <div class="contact">
                 <h3>Email Us</h3>
-                <form>
+                <form id="contactform">
                     <p>
                         <label>Name</label>
-                        <input type="text" name="name">
+                        <input type="text" name="name" id="name" placeholder="First and Last Name">
                     </p>
                     <p>
                         <label>Phone Number</label>
-                        <input type="text" name="phone">
+                        <input type="text" name="phone" id="phone"placeholder="555-535-4444">
                     </p>
                     <p>
                         <label>Email Address*</label>
-                        <input type="email" name="name">
+                        <input type="email" name="email" id="email"placeholder="* valid email address required">
                     </p>
-                    <p class="asterix">* valid email address required</p>
+                    <!--<p class="asterix">* valid email address required</p>-->
                     <p class="full">
-                        <label>How can we help you?</label>
-                        <textarea name="name" rows="5"></textarea>
+                        <label>Message</label>
+                        <textarea name="message" rows="5" id="message" placeholder="How can we help you?"></textarea>
                     </p>
                     <p class="full">
-                        <button>Submit</button>
+                        <button type="submit">Submit</button>
                     </p>
                 </form>
             </div>
         </div>
     </div>
+
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
