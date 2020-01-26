@@ -1,0 +1,301 @@
+/* MOBILE FIRST CSS */
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  box-sizing: border-box;
+}
+
+#wrapper {
+  width: 100%;
+  max-width: 800px;
+  margin: 0px auto;
+  background-color: #999;
+  padding: 1px;
+  box-shadow: 0 5px 20px 5px rgba(45, 45, 46, 0.7);
+}
+
+body {
+  font-family: verdana;
+  background-color: #747474;
+  background-image: url(../images/bkgnd/barbells-on-gray-surface.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#name {
+  text-align: center;
+  font-family: verdana;
+  font-style: italic;
+  color: #333;
+}
+
+#name img	{
+	width:20em;
+	}
+
+#name h1 {
+  font-size: 2.25em;
+  text-decoration: underline;
+}
+
+#name p {
+  font-size: 1.5em;
+}
+
+.navigation {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.navigation a {
+  font-weight: bold;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+.navigation a:link {
+  color: #333;
+}
+
+.navigation a:hover {
+  color: #6fe4f5
+}
+
+.nav_icon {
+  width: 48px;
+}
+
+.nav_text {
+  display: none;
+}
+
+#banner img {
+  width: 100%;
+  max-width: 800px;
+}
+
+#slogan {
+  text-align: center;
+  font-size: 1.4em;
+  font-style: italic;
+  font-family: times;
+  color: #333;
+  margin-top: 0em;
+
+}
+
+#main {
+  margin: .125em;
+}
+
+#heading {
+  margin-bottom: 1em;
+}
+
+#content {
+  text-align: center;
+  font-size: 1.15em;
+}
+
+#content h2 {
+  font-size: 1.25em;
+  color: #333;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#content img {
+  width: 100%;
+  max-width: 400px;
+  margin: 0em 0;
+}
+
+#content #text {
+  text-align: left;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  background-color: #CCC;
+  color: #333;
+}
+
+/*#sidebar {
+  text-align: center;
+}
+
+#sidebar h2{
+  text-transform: uppercase;
+}
+
+#sidebarheader {
+  color: #333;
+  margin-bottom: .125em;
+
+}
+
+#sidebarcontent {
+  background-color: #666;
+  font-size: 1.125em;
+  color: #CCC;
+}
+
+#rates a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+#rates a:hover {
+  color: #333
+}
+
+#rates {
+  background-color: #06F;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.4em;
+  padding: 1em 0;
+  color: #FFF;
+  text-transform: uppercase;
+}
+
+#times {
+  text-align: center;
+  margin: auto;
+}
+
+#hours {
+  font-size: 1.25em;
+  text-align: center;
+  background-color: #333;
+  color: #CCC;
+}
+
+#hours h3 {
+  font-size: 1.3em;
+  color: #ccc;
+}*/
+
+#footer {
+  text-align: center;
+  font-size: .75em;
+  color: #333;
+}
+
+/* MOBILE SPECIFIC CSS */
+@media (max-width: 800px) {
+  #text p {
+    margin: 0em 1em;
+  }
+  /*#sidebar{
+    margin: 3em 0;
+  }
+  #sidebarcontent{
+    margin: .25em 0;
+    font-size: 1.25rem;
+  }*/
+  #content{
+    margin: 3em 0;
+  }
+  #quote{
+    margin: 1em 0;
+  }
+  #hours{
+    margin: 1em 0;
+  }
+}
+
+/* DESKTOP SPECIFIC CSS */
+@media (min-width: 800px) {
+  #text {
+    padding: 1em;
+  }
+
+  #wrapper {
+    padding: 1.125em;
+    display: grid;
+    grid-row-gap: 1em;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
+      "name     name    tnav    tnav    tnav"
+      "banner   banner  banner  banner  banner"
+      "slogan   slogan  slogan  slogan  slogan"
+      "main     main    main    main    main"
+      "footer   footer  footer  footer  footer"
+    ;
+    align-items: center;
+  }
+
+  .nav_icon {
+    display: none;
+  }
+
+  .nav_text {
+    display: inline-block;
+  }
+
+  #name {
+    grid-area: name;
+  }
+
+  .navigation {
+    vertical-align: middle;
+    grid-area: tnav;
+  }
+
+  #banner {
+    grid-area: banner;
+  }
+
+  #slogan {
+    grid-area: slogan;
+  }
+
+  #main {
+    grid-area: main;
+    display: grid;
+    margin-top: 2.5em;
+    grid-gap: 5em;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-areas:
+      "content content content content content content content";
+  }
+
+  #content {
+    grid-area: content;
+  }
+
+  /*#sidebar {
+    grid-area: sidebar;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-rows: repeat(5, auto);
+  }
+
+  #sidebarcontent{
+    margin: 0em;
+    padding-top: .75em;
+  }
+
+  #quote{
+    padding-top: 2em;
+  }
+
+  #business{
+    padding-bottom: .75em;
+  }
+
+  #hours{
+    padding-top: .75em;
+  }*/
+
+  #footer {
+    grid-area: footer;
+  }
+
+  /* I also recommend reviewing all gaps, padding and margins throughout the entire stylesheet */
+
+}
