@@ -143,22 +143,23 @@ body {
   color: #CCC;
 }
 
-#quote a {
+#rates a {
   text-decoration: none;
   color: #FFF;
 }
 
-#quote a:hover {
+#rates a:hover {
   color: #333
 }
 
-#quote {
+#rates {
   background-color: #06F;
   text-align: center;
   font-weight: bold;
   font-size: 1.4em;
   padding: 1em 0;
   color: #FFF;
+  text-transform: uppercase;
 }
 
 #times {
