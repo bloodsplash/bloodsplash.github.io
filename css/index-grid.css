@@ -194,6 +194,8 @@ body {
 @media (max-width: 800px) {
   #text p {
     margin: 0em 1em;
+    font-size: 22px;
+    text-align: left;
   }
   #sidebar{
     margin: 3em 0;
