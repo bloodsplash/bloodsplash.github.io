@@ -93,18 +93,26 @@ body {
 }
 
 #heading {
-  margin-bottom: em;
+  margin-bottom: 2em;
 }
 
 #hourly {
   color: #4d4d4d;
   text-transform: uppercase;
   margin-bottom: 2em;
+  background-color: #6fe4f5;
+  padding: 1em;
 }
 
-#bundle {
-margin-bottom: .5em;
-text-transform: uppercase;
+#single {
+  margin-bottom: .5em;
+  text-transform: uppercase;
+  /*color: #333;*/
+}
+
+#multi {
+  margin-bottom: .5em;
+  text-transform: uppercase;
 }
 
 #rate {
@@ -319,6 +327,13 @@ text-transform: uppercase;
 
   #content {
     grid-area: content;
+  }
+
+  #single-rate {
+    display: grid;
+    grid-area: single-rate;
+    grid-gap: 2em;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   #rate {
