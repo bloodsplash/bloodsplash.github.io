@@ -115,12 +115,17 @@ body {
 }
 
 #content #text {
-  text-align: left;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: justify;
   width: 100%;
   max-width: 400px;
   margin: auto;
   background-color: #CCC;
   color: #333;
+}
+
+.drop-cap {
+  margin-bottom: 1em;
 }
 
 #sidebar {
@@ -266,6 +271,12 @@ body {
 
   #content {
     grid-area: content;
+  }
+
+  .drop-cap:first-letter{
+  font-size: 4.25em;
+  float: left;
+  margin-top: -.16em;
   }
 
   #sidebar {
