@@ -201,6 +201,8 @@ body {
     margin: 3em 0;
   }
   #gallery img{
+    width: 100%;
+    max-width: 200px;
     margin-bottom: .5em;
   }
   #quote{
