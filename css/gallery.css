@@ -200,6 +200,9 @@ body {
   #content{
     margin: 3em 0;
   }
+  #gallery img{
+    margin-bottom: .5em;
+  }
   #quote{
     margin: 1em 0;
   }
