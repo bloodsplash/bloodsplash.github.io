@@ -279,9 +279,51 @@ body {
     margin-top: 1em;
     margin-bottom: 1em;
     grid-gap: 1em;
-    grid-template-columns: repeat(4, 2fr);
-    grid-template-areas:
-      "gallery gallery gallery gallery";
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    /*grid-template-areas:
+      "gallery gallery gallery gallery";*/
+    /*grid-auto-rows: auto;*/
+    grid-auto-flow: dense;
+  }
+
+  #image8 {
+    grid-column: span 2;
+  }
+
+  #image9 {
+    grid-column: span 2;
+  }
+
+  #image1 {
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+
+  #image10 {
+    grid-column: span 2;
+  }
+
+  #image20 {
+    grid-column: span 2;
+  }
+
+  #image23 {
+    grid-column: span 2;
+  }
+
+  /*#image27 {
+    grid-column: span 2;
+    grid-row: span 2;
+  }*/
+
+  #image24 {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  #image30 {
+    grid-column: span 2;
+    grid-row: span 2;
   }
 
   /*#sidebar {
